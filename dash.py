@@ -19,7 +19,7 @@ def fazer_solicitacao():
     }
 
     # Fazer uma solicitação POST para a API
-    response = requests.post('http://localhost:8000/prever', json=data)
+    response = requests.post('http://52.5.243.24:80/prever', json=data)
 
     if response.status_code == 200:
         resultado = response.json()
